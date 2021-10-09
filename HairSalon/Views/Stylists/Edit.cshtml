@@ -1,0 +1,34 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<div class = "container">
+  <div class = "text-area">
+    <h2>Edit</h2>
+  </div>
+
+  <div class = "text-area">
+    <h4>Edit this stylist: @Html.DisplayFor(model => model.Name)</h4>
+  </div>
+
+
+  @using (Html.BeginForm())
+  {
+    <div class = "text-area">
+      @Html.HiddenFor(model => model.StylistId)
+      @Html.LabelFor(model => model.Name)
+      @Html.EditorFor(model => model.Name)
+    </div>
+
+    <div class = "text-area">
+      <input type="submit" value="Save" />
+    </div>
+
+  }
+  <div class = "text-area">
+    <p>@Html.ActionLink("Back to stylists", "Index")</p>
+  </div>
+
+</div>

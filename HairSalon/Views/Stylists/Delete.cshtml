@@ -6,12 +6,20 @@
 
 
 <div class = "container">
-  <h2>Are you sure you want to delete this?</h2>
+  <div class = "text-area">
+    <h2>Are you sure you want to delete this?</h2>
+  </div>
+
 
   @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
   @using (Html.BeginForm())
   {
-    <input type="submit" value="Delete" />
+    <div class = "text-area">
+      <input type="submit" value="Delete" />
+    </div>
   }
-  @Html.ActionLink("Back to stylists", "Index")
+  <div class = "text-area">
+    @Html.ActionLink("Back to stylists", "Index")
+  </div>
+
 </div>

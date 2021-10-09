@@ -1,0 +1,25 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<div class = "container">
+  <div class = "text-area">
+    <h2>Stylist Details</h2>
+  </div>
+
+  <hr />
+  <div class = "text-area">
+    <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+  </div>
+  <div class = "text-area">
+    <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+  </div>
+  <div class = "text-area">
+    <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+  </div>
+  <div class = "text-area">
+    <p>@Html.ActionLink("Back to stylists", "Index")</p>
+  </div>
+</div>

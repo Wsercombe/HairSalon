@@ -5,13 +5,23 @@
 @model HairSalon.Models.Stylist
 
 <div class = "container">
-  <h4>Add a new stylist</h4>
-  @using (Html.BeginForm())
-  {
-    @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name)
-    <input type="submit" value="Add new stylist" />
-  }
-  <p>@Html.ActionLink("Stylist page", "Index")</p>
+  <div class = "text-area">
+    <h4>Add a new stylist</h4>
+  </div>
+
+    @using (Html.BeginForm())
+    {
+      <div class = "text-area">
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+      </div>
+      <div class = "text-area">
+        <input type="submit" value="Add new stylist" />
+      </div>
+    }
+  <div class = "text-area">
+    <p>@Html.ActionLink("Stylist page", "Index")</p>
+  </div>
+
 </div>
 
