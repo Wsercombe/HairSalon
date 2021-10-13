@@ -9,6 +9,10 @@
 * _C##_
 * _GIT_
 * _Visual Studio_
+*_ASP Net Core_
+*_ASP NET MVC_
+* _Entity_
+*_MySql Database_
 
 ## Description
 
@@ -16,10 +20,18 @@
 
 ## Setup/Installation Requirements
 
+*_Ensure that Dot.Net, MySql Community and MySql Workbench are installed on your computer_
 * _Navigate to the gitub page to find the application_
 * _Clone the application from the github address to their local computer_
-* _Import the sql file into mysql workbench_
+* _Open MySql Workbench, import the sql file (willsercombe.sql) into mysql workbench_
 * _Create an app settings.json file using the following code and point the database parameter correctly to the sql file_
+```
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;database=[will_sercombe.sql];uid=root;pwd=[YOUR-PASSWORD];"
+  }
+}
+```
 * _Run "dotnet build" within the terminal of the HairSalon directory_
 * _Run "dotnet run" within the terminal of the HairSalon directory_
 
