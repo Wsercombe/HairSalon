@@ -20,7 +20,7 @@
 
 ## Setup/Installation Requirements
 
-*_Ensure that Dot.Net, MySql Community and MySql Workbench are installed on your computer_
+* _Ensure that Dot.Net, MySql Community and MySql Workbench are installed on your computer_
 * _Navigate to the gitub page to find the application_
 * _Clone the application from the github address to their local computer_
 * _Open MySql Workbench, import the sql file (willsercombe.sql) into mysql workbench_
